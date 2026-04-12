@@ -1,5 +1,8 @@
 # Webiny
 
+<p align="center"><img src="logo.png" alt="Webiny" width="120"></p>
+
+
 [![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com)
 [![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/webiny/actions)
 
