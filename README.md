@@ -6,6 +6,10 @@ An open-source serverless headless CMS with page builder, file manager, form bui
 
 > **Credits**: Built on [Webiny](https://webiny.com) by [Webiny](https://github.com/webiny). All trademarks belong to their respective owners.
 
+## Local Development
+
+See [Webiny docs](https://www.webiny.com/docs) for setup. Webiny typically deploys to AWS but can run locally for development.
+
 ## Deploy on StackBlaze
 
 [![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
@@ -93,10 +97,6 @@ flowchart LR
 **Best for:** Production workloads, high-traffic applications, business-critical deployments.
 
 </details>
-
-## Local Development
-
-See [Webiny docs](https://www.webiny.com/docs) for setup. Webiny typically deploys to AWS but can run locally for development.
 
 ---
 
