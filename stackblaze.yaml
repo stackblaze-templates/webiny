@@ -1,0 +1,15 @@
+databases:
+  - name: webiny-db
+    databaseName: webiny
+    user: webiny
+services:
+  - type: web
+    name: webiny
+    runtime: docker
+    plan: starter
+    autoDeploy: false
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: webiny-db
+          property: connectionString

@@ -1,0 +1,19 @@
+services:
+  webiny:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://webiny:webiny@db:5432/webiny
+    depends_on:
+      - db
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: webiny
+      POSTGRES_USER: webiny
+      POSTGRES_PASSWORD: webiny
+    volumes:
+      - db_data:/var/lib/postgresql/data
+volumes:
+  db_data:
