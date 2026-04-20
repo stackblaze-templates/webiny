@@ -103,3 +103,25 @@ flowchart LR
 ### Maintained by [StackBlaze](https://stackblaze.com)
 
 Weekly automated checks for up-to-date dependencies, security scanning, and best practices.
+
+---
+
+## Security
+
+### Required environment variables
+
+Before running in any shared or production environment, set the following variables (copy `.env.example` to `.env`):
+
+| Variable | Description |
+|---|---|
+| `POSTGRES_PASSWORD` | **Required.** PostgreSQL password — must be changed from the default. |
+| `POSTGRES_USER` | PostgreSQL username (default: `webiny`). |
+| `POSTGRES_DB` | PostgreSQL database name (default: `webiny`). |
+
+> **Warning:** The default `docker-compose.yml` will refuse to start unless `POSTGRES_PASSWORD` is set in your environment or a `.env` file. Do not use the placeholder value from `.env.example` in production.
+
+### Insecure defaults to change before production
+
+- **Database password**: the `.env.example` placeholder (`change_me_before_running`) is not a valid secret — replace it with a strong, randomly generated password.
+- **`NODE_ENV`**: the Docker image sets `NODE_ENV=production`. Do not override this to `development` in production deployments.
+
