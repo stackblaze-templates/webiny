@@ -1,0 +1,9 @@
+.git
+.env
+.env.*
+node_modules
+*.pem
+*.key
+*.log
+.DS_Store
+.webiny/
